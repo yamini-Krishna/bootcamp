@@ -12,22 +12,25 @@ Once it's officially published to PyPI, you will be able to install it like so:
 
 bash
 pip install yamini-hello
+
 🧑‍💻 Usage
 After installation, you can use this package in your Python projects to greet a user. ✨
 
 🎉 Example 1: Greet with the default message ("world")
+python
 
 from yamini_hello import say_hello
 
 say_hello()  # Output: Hello, world!
 ✨ Example 2: Greet with a custom name
-
+python
+Copy
+Edit
 from yamini_hello import say_hello
 
 say_hello('Yamini')  # Output: Hello, Yamini!
 💬 Example Output:
 When you run the above code, you should see the following output:
-
 
 Hello, world!
 Hello, Yamini!
