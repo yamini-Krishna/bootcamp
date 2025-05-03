@@ -1,6 +1,5 @@
 # 🖐️ **yamini-hello** 🤖
 
-````markdown
 A simple Python package that greets a user with a **"Hello"** message. 🌍
 
 ## 🚀 Installation
