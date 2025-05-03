@@ -71,5 +71,3 @@ For any questions or support, you can reach out to me at [your-email@example.com
 * Twine 📤
 
 ```
-
-
