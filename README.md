@@ -122,9 +122,4 @@ bootcamp/
 
 Licensed under the MIT License. See `LICENSE` for more info.
 
-```
 
----
-
-
-```
