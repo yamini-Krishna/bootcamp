@@ -1,73 +1,125 @@
-# 🖐️ **yamini-hello** 🤖
+# bootcamp
 
-A simple Python package that greets a user with a **"Hello"** message. 🌍
 
-## 🚀 Installation
+# 👋 yamini_hello
 
-To install the package from **TestPyPI** (for testing purposes), use the following command:
+**yamini_hello** is a simple, user-friendly Python CLI tool that greets you using rich-text formatting and a beautiful command-line interface powered by `typer`.
+
+This project is a part of my Python packaging bootcamp exercises covering:
+- ✅ Application setup and packaging
+- ✅ Using external modules (`rich`, `typer`)
+- ✅ Building a command-line interface
+- ✅ Publishing to TestPyPI
+
+---
+
+## 📦 Installation
+
+You can install this package from **TestPyPI**:
 
 ```bash
-pip install --index-url https://test.pypi.org/simple/ yamini-hello
+pip install -i https://test.pypi.org/simple/ yamini-hello
 ````
 
-Once it's officially published to PyPI, you will be able to install it like so:
+> 📌 *Make sure to use the full name with hyphen (`yamini-hello`) when installing.*
+
+---
+
+## 🚀 Usage
+
+Once installed, simply run the following command from your terminal:
 
 ```bash
-pip install yamini-hello
+yamini_hello [name]
 ```
 
-## 🧑‍💻 Usage
+If no name is provided, it will default to `"world"`.
 
-After installation, you can use this package in your Python projects to greet a user. ✨
+### 🎉 Examples
 
-### 🎉 Example 1: Greet with the default message ("world")
+```bash
+yamini_hello
+# Output: Hello, [bold magenta]world[/] 👋
 
-```python
-from yamini_hello import say_hello
-
-say_hello()  # Output: Hello, world!
+yamini_hello Yamini
+# Output: Hello, [bold magenta]Yamini[/] 👋
 ```
 
-### ✨ Example 2: Greet with a custom name
+---
 
-```python
-from yamini_hello import say_hello
+## 🛠️ Development Setup (For Contributors)
 
-say_hello('Yamini')  # Output: Hello, Yamini!
+Clone the repo and follow these steps:
+
+```bash
+cd day0
+uv venv
+source .venv/bin/activate
+pip install -e .
 ```
 
-### 💬 Example Output:
+To run locally:
 
-When you run the above code, you should see the following output:
-
-```text
-Hello, world!
-Hello, Yamini!
+```bash
+python -m yamini_hello.main Yamini
 ```
 
-## 📦 Package Information
+---
 
-* **Package available on TestPyPI:** [yamini-hello on TestPyPI](https://test.pypi.org/project/yamini-hello/)
-* **Version:** 0.1.0
-* **License:** MIT License
+## 🧪 Running Tests
 
-## 📜 License
+```bash
+pytest tests/
+```
 
-This package is licensed under the **MIT License**. 🛡️
+Ensure you're in the virtual environment and all dependencies are installed.
 
-## 🤝 Contributing
+---
 
-Feel free to fork the repository and submit pull requests. You are also welcome to report issues or suggest improvements. 🌱
-
-## 📫 Contact
-
-For any questions or support, you can reach out to me at [your-email@example.com](mailto:your-email@example.com). I'm happy to help! 💌
-
-## 🔧 Tools Used
-
-* Python 🐍
-* setuptools 📦
-* TestPyPI 🌐
-* Twine 📤
+## 🧾 Project Structure
 
 ```
+bootcamp/
+└── day0/
+    ├── yamini_hello/
+    │   ├── __init__.py
+    │   └── main.py         # CLI logic using typer + rich
+    ├── tests/
+    │   └── test_main.py    # Unit tests
+    ├── README.md           # 📄 You're here!
+    ├── pyproject.toml      # 📦 Build config & CLI entrypoint
+    └── LICENSE             # MIT License
+```
+
+---
+
+## 🌐 Published Package
+
+**🔗 TestPyPI**:
+👉 [https://test.pypi.org/project/yamini-hello](https://test.pypi.org/project/yamini-hello)
+
+---
+
+## 📚 Technologies Used
+
+* 🐍 Python 3.8+
+* 🎨 [`rich`](https://github.com/Textualize/rich) for colorful terminal output
+* ⚡ [`typer`](https://github.com/tiangolo/typer) for building CLIs easily
+* 🧪 [`pytest`](https://docs.pytest.org/) for unit testing
+* 📦 `uv`, `setuptools`, `twine` for environment & packaging
+
+---
+
+## 👩‍💻 Author
+
+**Yamini Krishna**
+💌 [yaminimusku04@example.com](mailto:yaminimusku04@example.com)
+🔗 GitHub: [@yamini-krishna](https://github.com/yamini-Krishna/bootcamp)
+
+---
+
+## 📄 License
+
+Licensed under the MIT License. See `LICENSE` for more info.
+
+
