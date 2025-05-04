@@ -1,3 +1,21 @@
 [build-system]
-requires = ["setuptools", "twine"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "yamini_hello"
+version = "0.1.7"
+description = "A CLI app with simple print messages using typer and rich"
+readme = "README.md"
+authors = [
+  { name = "Yamini Krishna", email = "yaminimusku04@example.com" }
+]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = [
+  "typer>=0.9.0",
+  "rich>=13.0.0"
+]
+
+[project.scripts]
+yamini_hello = "yamini_hello.main:app"
