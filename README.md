@@ -1,7 +1,6 @@
 # bootcamp
 
 
-````markdown
 # 👋 yamini_hello
 
 **yamini_hello** is a simple, user-friendly Python CLI tool that greets you using rich-text formatting and a beautiful command-line interface powered by `typer`.
