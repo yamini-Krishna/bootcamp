@@ -93,13 +93,10 @@ bootcamp/
 
 ---
 
-## 🌐 Published Package
+## 🌐 Links
 
 **🔗 TestPyPI**:
 👉 [https://test.pypi.org/project/yamini-hello]
-
----
----
 
 **🔗 Asciinema**:
 👉 https://asciinema.org/a/OtDoS7l7mYULut9ipupaPTlZr
