@@ -1,8 +1,3 @@
-
-
----
-
-```markdown
 # Section 7.5 – Packaging with `pyproject.toml`
 
 This module demonstrates how to package a Python project using `pyproject.toml`, define an entry point for command-line usage, build a wheel, and install/test the package locally.
