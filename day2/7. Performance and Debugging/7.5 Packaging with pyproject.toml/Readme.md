@@ -19,10 +19,6 @@ mytool/
 
 ├── cli.py
 
-├── data/
-
-  └── sample.txt
-
 pyproject.toml
 
 README.md
