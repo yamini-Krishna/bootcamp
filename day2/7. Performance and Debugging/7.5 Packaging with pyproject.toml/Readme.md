@@ -14,11 +14,17 @@ This module demonstrates how to package a Python project using `pyproject.toml`,
 ```
 
 mytool/
+
 ├── **init**.py
+
 ├── cli.py
+
 ├── data/
+
 │   └── sample.txt
+
 pyproject.toml
+
 README.md
 
 ````
