@@ -21,7 +21,7 @@ mytool/
 
 ├── data/
 
-      └── sample.txt
+  └── sample.txt
 
 pyproject.toml
 
