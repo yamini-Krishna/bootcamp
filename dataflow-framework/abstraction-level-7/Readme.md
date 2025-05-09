@@ -39,8 +39,8 @@ This project introduces **observability** and **introspection** to a data proces
 ### 1. **Clone the repository** 🧑‍💻
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/yamini-Krishna/bootcamp.git
+cd bootcamp/abstraction-level-7
 ```
 
 ### 2. **Set up the virtual environment** 🌱
