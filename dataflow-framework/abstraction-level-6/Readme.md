@@ -23,7 +23,7 @@ Before running the system, make sure you have Python 3.x installed. You can inst
    ```bash
    git clone https://github.com/yamini-Krishna/bootcamp.git
    cd bootcamp/dataflow-framework/abstraction-level-6
-   ```
+````
 
 2. Create a virtual environment and activate it:
 
@@ -43,18 +43,20 @@ Before running the system, make sure you have Python 3.x installed. You can inst
 ## 🏗️ Project Structure
 
 ```
-state-based-routing/
-├── config.py           # Configuration file for tag-to-processor mappings
-├── engine.py           # Core engine for routing and managing state transitions
-├── processors/         # Directory for processor modules
-│   ├── __init__.py     # Marks the directory as a Python package
-│   ├── start.py        # 'start' tag processor
-│   ├── filters.py      # Filter processors (e.g., error, warning filters)
-│   ├── formatters.py   # Format processors (e.g., convert text to snake_case)
-│   └── output.py       # Output processors (e.g., terminal output)
-├── main.py             # Entry point of the system
-├── requirements.txt    # List of Python dependencies
-└── README.md           # Project documentation (this file)
+bootcamp/
+└── dataflow-framework/
+    └── abstraction-level-6/
+        ├── config.py           # Configuration file for tag-to-processor mappings
+        ├── engine.py           # Core engine for routing and managing state transitions
+        ├── processors/         # Directory for processor modules
+        │   ├── __init__.py     # Marks the directory as a Python package
+        │   ├── start.py        # 'start' tag processor
+        │   ├── filters.py      # Filter processors (e.g., error, warning filters)
+        │   ├── formatters.py   # Format processors (e.g., convert text to snake_case)
+        │   └── output.py       # Output processors (e.g., terminal output)
+        ├── main.py             # Entry point of the system
+        ├── requirements.txt    # List of Python dependencies
+        └── README.md           # Project documentation (this file)
 ```
 
 ---
@@ -124,6 +126,50 @@ Here's an example scenario of how the system routes lines:
 
 ---
 
+## 📝 Example Input and Output
+
+### Example Input:
+
+Consider the following lines being fed into the system:
+
+```python
+input_lines = [
+    "error: This is an error message",
+    "warn: This is a warning message",
+    "general: This is a general message"
+]
+```
+
+### Expected Output:
+
+1. **Start Processor** (`processors.start.tag_lines`):
+
+   * The `start` processor tags the lines as `'error'`, `'warn'`, or `'general'`.
+
+2. **Error Line** (`processors.filters.only_error`):
+
+   * The line with the tag `error` will pass through the `only_error` processor.
+
+3. **Warning Line** (`processors.filters.only_warn`):
+
+   * The line with the tag `warn` will pass through the `only_warn` processor.
+
+4. **General Line** (`processors.formatters.snakecase`):
+
+   * The line with the tag `general` will be formatted to `snake_case`.
+
+5. **Final Output** (`processors.output.terminal`):
+
+   * The processed lines are passed to the terminal, showing the following:
+
+```
+Processed Error: This is an error message
+Processed Warning: This is a warning message
+Processed General: this_is_a_general_message
+```
+
+---
+
 ## 🛠️ Customizing the System
 
 ### 1. **Adding a New Processor**
@@ -158,6 +204,11 @@ In a state machine, infinite cycles might occur. The system should detect or lim
 ## 📝 Reflection
 
 This system can handle complex workflows where tags dynamically determine the processing path. You can implement retry mechanisms, feedback loops, and sophisticated workflows with this flexible framework.
+
+In a distributed setting, this system can be scaled across multiple machines where processors are distributed and run in parallel, improving efficiency and fault tolerance.
+
+
+
 
 In a distributed setting, this system can be scaled across multiple machines where processors are distributed and run in parallel, improving efficiency and fault tolerance.
 
