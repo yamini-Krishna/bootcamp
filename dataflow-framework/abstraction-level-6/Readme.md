@@ -207,10 +207,3 @@ This system can handle complex workflows where tags dynamically determine the pr
 
 In a distributed setting, this system can be scaled across multiple machines where processors are distributed and run in parallel, improving efficiency and fault tolerance.
 
-
-
-
-In a distributed setting, this system can be scaled across multiple machines where processors are distributed and run in parallel, improving efficiency and fault tolerance.
-
-
-
