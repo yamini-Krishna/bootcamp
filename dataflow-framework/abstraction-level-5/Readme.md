@@ -43,22 +43,6 @@ Imagine you're building a log processing tool. Each log line might be:
 
 ---
 
-## **File Structure**
-
-Here is an overview of the important files in this project:
-
-```
-dataflow-framework/
-│
-├── abstraction-level-5/
-│   ├── config.py           # Configuration file containing processor definitions and routing rules
-│   ├── engine.py           # Main engine for running the DAG and routing lines
-│   ├── main.py             # Main file to run the pipeline with sample input lines
-│   └── processors.py       # Contains the definitions of various processors (e.g., trim, count, format)
-```
-
----
-
 ## **How to Run the Pipeline**
 
 ### **1. Set up a Virtual Environment**
