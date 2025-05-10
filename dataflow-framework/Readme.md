@@ -20,8 +20,9 @@ This project implements a dynamic, observable, fault-tolerant, and self-managing
 
 1. **Clone the repository**:
     ```bash
-    git clone <repository-url>
-    cd <repository-name>
+    git clone https://github.com/yamini-Krishna/bootcamp.git
+    cd bootcamp
+    cd dataflow-framework
     ```
 
 2. **Set up a virtual environment** (optional but recommended):
