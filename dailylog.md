@@ -87,6 +87,40 @@
 - Building a routing engine with condition-based flow.
 - Adding real-time observability to track internal operations.
 
+---
+
+# persistence-drills
+
+#### Folder 1: File Serialization
+
+* Used `pickle`, JSON, and YAML for serializing custom classes.
+* Handled advanced cases: cyclic refs, versioning, sensitive data, game state saving.
+
+#### Folder 2: SQLite Basics
+
+* Learned ACID properties, SQLite reliability, and use case scenarios.
+
+#### Folder 3: System Setup
+
+* Installed SQLite, created tables, exported DB files.
+* Wrote program to generate 500 SQL inserts efficiently.
+
+#### Folder 4: SQLite3 with Python
+
+* Implemented CRUD and transactions on `store.db`.
+* Managed categories, batch inserts, exports, and simulated banking transactions.
+
+#### Folder 5: SQLAlchemy + Pydantic
+
+* Built ORM models and schemas.
+* Performed CRUD, relationships, bulk inserts with rollback.
+* Converted code to async.
+
+#### Folder 6: Real-World Drills
+
+* Added schema migrations (e.g., `created_at`).
+* Implemented soft deletes, audit logging, rate limiting, and recovery.
+
 
 
 
