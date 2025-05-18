@@ -53,7 +53,7 @@ This repo tracks my progress through the Developer Documentation: Tools & Best P
 
 To become fluent in writing and maintaining high-quality technical documentation using Markdown, diagrams, and tools like MkDocs.
 
-## 🛠️ Setup
+🛠️ Setup
 
 # Install MkDocs and Material theme
 pip install mkdocs-material
@@ -61,7 +61,7 @@ pip install mkdocs-material
 Preview the site locally
 mkdocs serve
 
-## 📎 Resources
+📎 Resources
 
 * [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
 * [Mermaid.js Docs](https://mermaid.js.org/)
