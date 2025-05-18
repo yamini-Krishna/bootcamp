@@ -50,6 +50,23 @@
 
 ```
 
+---
+
+# day2
+
+## language-drills
+
+```
+- Mastered Python basics: lists, dicts, sets, tuples, comprehensions, functions, scope, error handling, iterators, and generators.
+- Explored Pythonic idioms: EAFP vs LBYL, built-in functions, inline expressions, context managers.
+- Practiced OOP: classes, inheritance, magic methods, data classes, static/class methods.
+- Used functional tools: lambdas, decorators, functools, itertools.
+- Navigated the standard library: collections, filesystem, datetime, JSON/CSV/pickle, subprocess.
+- Learned data validation: pydantic, field metadata, logging, naming.
+- Covered performance/debugging: profiling, lazy evaluation, debugging tools, observability, packaging.
+```
+
+
 
 
 
