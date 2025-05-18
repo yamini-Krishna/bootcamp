@@ -15,4 +15,29 @@ Basic setup for the bootcamp environment.
 - Asciinema setup for CLI demos.
 ```
 
+---
+
+## basics
+
+All exercises (`ex-basics-1`, `ex-basics-2`, `ex-basics-3`) were implemented in a single project folder.
+
+```markdown
+- Initialized project using `uv init` and created a virtual environment with `uv venv`
+- Setup IDE (VS Code) with the created virtual environment
+- Created a single module that:
+  - Greets the passed argument or defaults to "world"
+  - Uses `rich` to print a colorful message
+  - Provides a CLI interface using `typer`
+- Added CLI entry in `pyproject.toml`
+- Published the package on TestPyPI  
+- Recorded CLI usage demo with Asciinema  
+ 
+
+### 🛠️ Typing & IDE Drills (Practice)
+- Explored static typing (functions, Optional, Union, Callable, etc.)
+- Practiced VS Code features: type checking, linting, refactoring, navigation, renaming, and docstring preview
+```
+
+---
+
 
