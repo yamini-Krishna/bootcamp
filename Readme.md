@@ -90,4 +90,34 @@ Each section has hands-on drills with focused topics.
 7. Performance & Debugging (profiling, lazy eval, packaging)
 
 ```
+---
+
+# dataflow-framework
+
+
+# 🧱 Abstraction through Streaming Line Processing
+
+## 🌟 Overview
+This project explores the evolution of a simple line-processing script into a modular, extensible, and observable streaming engine.
+
+Each level increases in complexity, focusing on clean architecture, modularity, state handling, routing, and real-time observability.
+
+## 📁 Project Structure
+
+- `abstraction-level-0/`: Basic script, no abstraction.
+- `abstraction-level-1/`: CLI arguments and environment config.
+- `abstraction-level-2/`: Modular structure with standardized (str → str) processors.
+- `abstraction-level-4/`: Stream-based processing and stateful transformations.
+- `abstraction-level-5/`: DAG routing and conditional flows per line.
+- `abstraction-level-6/`: Dynamic state-based routing using tags.
+- `abstraction-level-7/`: Observability with metrics and a live dashboard.
+- `FINAL.md`: Final project wrap-up, system design notes, and reflection.
+
+## ✅ Goals
+
+- Learn clean abstraction and separation of concerns.
+- Build a flexible stream processing system.
+- Route data based on content or state.
+- Add observability like real-world systems.
+
 
