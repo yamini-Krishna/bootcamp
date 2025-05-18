@@ -1,4 +1,4 @@
-### day0
+# day0
 
 ## tools
 
@@ -40,4 +40,36 @@ All exercises (`ex-basics-1`, `ex-basics-2`, `ex-basics-3`) were implemented in 
 
 ---
 
+# day1
+
+##doctools
+
+````markdown
+# 🧠 Developer Documentation Training
+
+This repo tracks my progress through the Developer Documentation: Tools & Best Practices training.
+
+## 📌 Purpose
+
+To become fluent in writing and maintaining high-quality technical documentation using Markdown, diagrams, and tools like MkDocs.
+
+## 🛠️ Setup
+
+```bash
+# Install MkDocs and Material theme
+pip install mkdocs-material
+
+# Preview the site locally
+mkdocs serve
+````
+
+## 📎 Resources
+
+* [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
+* [Mermaid.js Docs](https://mermaid.js.org/)
+* [Draw.io (diagrams.net)](https://draw.io/)
+
+````
+
+---
 
