@@ -34,6 +34,23 @@
 -  Practiced IDE features: type checking, linting, refactoring, navigation, renaming, docstrings, and import management
 ```
 
+---
+### day1 
+
+## doctools
+
+```markdown
+**What I learned:**
+- Markdown basics (headings, links, code, lists)
+- How docs help teams work better
+- Setup MkDocs project
+
+**What confused me:**
+- How to add diagrams in MkDocs
+
+```
+
+
 
 
 
