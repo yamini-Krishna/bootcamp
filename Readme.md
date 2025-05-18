@@ -1,8 +1,9 @@
-```markdown
+
 ## tools
 
 Basic setup for the bootcamp environment.
 
+```markdown
 - GitHub monorepo created.
 - Linux server provisioned (Azure via GitHub Student Pack).
 - Web server hosted with name and photo.
