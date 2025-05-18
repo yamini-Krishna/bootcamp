@@ -66,6 +66,28 @@
 - Covered performance/debugging: profiling, lazy evaluation, debugging tools, observability, packaging.
 ```
 
+---
+
+# dataflow-framework
+
+- Completed all abstraction levels from 0 to 7:
+  -  Level 0: Basic one-time line processing script.
+  -  Level 1: Added CLI arguments and environment config.
+  -  Level 2: Modularized code with str → str processors.
+  -  Level 4: Implemented stream processing with stateful logic.
+  -  Level 5: Built a DAG-based routing system.
+  -  Level 6: Designed a tag-based state transition engine.
+  -  Level 7: Added observability with metrics and line tracing.
+- Wrapped up with `FINAL.md` summarizing the architecture and learnings.
+
+### Key Learnings
+
+- How to evolve a simple script into a reusable system.
+- Managing complexity with abstraction and modularity.
+- Building a routing engine with condition-based flow.
+- Adding real-time observability to track internal operations.
+
+
 
 
 
