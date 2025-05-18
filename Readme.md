@@ -119,4 +119,43 @@ Each level increases in complexity, focusing on clean architecture, modularity, 
 - Route data based on content or state.
 - Add observability like real-world systems.
 
+---
+
+# persistence-drills
+
+This project covers end-to-end persistence systems in Python – from files to databases and real-world system design.
+
+### 🗂️ Folders Overview
+
+**1. File & DB Persistence:**
+
+* Pickle, JSON, YAML serialization
+* Game state saving, custom hooks, cyclic reference handling
+
+**2. SQLite Basics:**
+
+* ACID properties, reliability, trade-offs
+
+**3. System Setup:**
+
+* SQLite install, table creation
+* 500-insert generator & timing
+
+**4. SQLite + Python:**
+
+* `store.db`, product CRUD
+* Transactions, joins, exports, banking simulation
+
+**5. SQLAlchemy + Pydantic:**
+
+* ORM models, async support
+* CRUD, relationships, validation
+
+**6. Real-World Drills:**
+
+* Schema evolution, migrations
+* Handling deletes, archiving, auditing, rate limits, recovery
+
+
+
 
