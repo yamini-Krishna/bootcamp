@@ -42,26 +42,24 @@ All exercises (`ex-basics-1`, `ex-basics-2`, `ex-basics-3`) were implemented in 
 
 # day1
 
-##doctools
+## doctools
 
 ````markdown
-# 🧠 Developer Documentation Training
+🧠 Developer Documentation Training
 
 This repo tracks my progress through the Developer Documentation: Tools & Best Practices training.
 
-## 📌 Purpose
+📌 Purpose
 
 To become fluent in writing and maintaining high-quality technical documentation using Markdown, diagrams, and tools like MkDocs.
 
 ## 🛠️ Setup
 
-```bash
 # Install MkDocs and Material theme
 pip install mkdocs-material
 
-# Preview the site locally
+Preview the site locally
 mkdocs serve
-````
 
 ## 📎 Resources
 
