@@ -55,7 +55,7 @@ To become fluent in writing and maintaining high-quality technical documentation
 
 🛠️ Setup
 
-# Install MkDocs and Material theme
+Install MkDocs and Material theme
 pip install mkdocs-material
 
 Preview the site locally
