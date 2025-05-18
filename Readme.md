@@ -32,8 +32,7 @@ All exercises (`ex-basics-1`, `ex-basics-2`, `ex-basics-3`) were implemented in 
 - Published the package on TestPyPI  
 - Recorded CLI usage demo with Asciinema  
  
-
-### 🛠️ Typing & IDE Drills (Practice)
+ 🛠️ Typing & IDE Drills (Practice)
 - Explored static typing (functions, Optional, Union, Callable, etc.)
 - Practiced VS Code features: type checking, linting, refactoring, navigation, renaming, and docstring preview
 ```
