@@ -1,6 +1,6 @@
-### 🗓️ `daily-log.md`
+# 🗓️ `daily-log.md`
 
-### day0 
+# day0 
 
 ## tools
 ```markdown
@@ -35,7 +35,7 @@
 ```
 
 ---
-### day1 
+# day1 
 
 ## doctools
 
