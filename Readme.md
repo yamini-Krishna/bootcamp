@@ -40,7 +40,7 @@ All exercises (`ex-basics-1`, `ex-basics-2`, `ex-basics-3`) were implemented in 
 
 ---
 
-# 🌟 day1
+# day1
 
 ## doctools
 
