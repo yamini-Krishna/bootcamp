@@ -40,7 +40,7 @@ All exercises (`ex-basics-1`, `ex-basics-2`, `ex-basics-3`) were implemented in 
 
 ---
 
-# day1
+# 🌟 day1
 
 ## doctools
 
@@ -94,10 +94,9 @@ Each section has hands-on drills with focused topics.
 
 # dataflow-framework
 
+# Abstraction through Streaming Line Processing
 
-# 🧱 Abstraction through Streaming Line Processing
-
-## 🌟 Overview
+## Overview
 This project explores the evolution of a simple line-processing script into a modular, extensible, and observable streaming engine.
 
 Each level increases in complexity, focusing on clean architecture, modularity, state handling, routing, and real-time observability.
