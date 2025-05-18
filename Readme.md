@@ -77,10 +77,10 @@ mkdocs serve
 
 Python Learning Drills 🐍
 
-```markdown
-
 Sections
+Each section has hands-on drills with focused topics.
 
+```markdown
 1. Core Python (data structures, functions, error handling)
 2. Pythonic Idioms (EAFP, built-ins, context managers)
 3. OOP (classes, inheritance, data classes)
@@ -89,8 +89,5 @@ Sections
 6. Validation & Clarity (pydantic, logging, naming)
 7. Performance & Debugging (profiling, lazy eval, packaging)
 
-Structure
-
-Each section has hands-on drills with focused topics.
 ```
 
