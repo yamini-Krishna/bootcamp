@@ -171,21 +171,21 @@ SELECT * FROM articles;
 
 Watch demos to understand how to use the project via CLI and API:
 
-### ✅ CLI Usage Demo
+### CLI Usage and Docker
 
 [![asciicast](https://asciinema.org/a/Tmj6NyuuEqlQIC5DxFccUoKkx.svg)](https://asciinema.org/a/Tmj6NyuuEqlQIC5DxFccUoKkx)
 
-### ✅ API Server Running
+### API Server Running
 
 [![asciicast](https://asciinema.org/a/yGzIpSMdpRZvirzcnoZGJax7T.svg)](https://asciinema.org/a/yGzIpSMdpRZvirzcnoZGJax7T)
 
-### ✅ API Usage (Upload + Download)
+### API Usage (Upload + Download)
 
 [![asciicast](https://asciinema.org/a/Uszpa0X1C54yzkz7muajj1kKU.svg)](https://asciinema.org/a/Uszpa0X1C54yzkz7muajj1kKU)
 
 ---
 
-## ✅ Features
+## Features
 
 * Fetch PMC XML articles
 * Extract captions, labels, and figure images
