@@ -1,7 +1,7 @@
 
-# 🧬 PubMed Figure Caption Entity Extractor (FCE)
+# PubMed Figure Caption Extractor (FCE)
 
-This project fetches articles from PubMed Central (PMC), parses figure captions, and extracts key biological entities using the BERN2 API. It supports both **CLI** and **FastAPI** usage, with export options in CSV and JSON.
+This tool fetches articles from PubMed Central (PMC) by PMCID, extracts figure captions and related metadata, annotates biomedical entities, and exports the data to CSV/JSON. It supports both CLI and REST API usage.
 
 ---
 
@@ -9,33 +9,55 @@ This project fetches articles from PubMed Central (PMC), parses figure captions,
 
 ```
 .
-├── api/                      # FastAPI app (endpoints)
-├── config.py                 # Configuration settings
-├── csv_exporter.py           # CSV export logic
-├── json_exporter.py          # JSON export logic
-├── pmc_api_client.py         # Fetches article XML from PMC
-├── pmc_parser.py             # Parses XML and figures
-├── storage/                  # Storage backends (DuckDB)
-├── data_sources/             # Data source factory and interfaces
-├── run.py                    # CLI entry point
-├── requirements.txt          # Python dependencies
-├── Dockerfile                # Docker container definition
-├── docker-compose.yaml       # Docker service runner
-├── Makefile                  # Optional commands
-├── ids.txt                   # Example PMCIDs list
+├── api/
+│   ├── __init__.py
+│   ├── auth.py
+│   └── main.py
+│
+├── config.py
+├── csv_exporter.py
+├── data/
+│   ├── articles.duckdb
+│   └── articles.duckdb.wal
+│
+├── data_sources/
+│   ├── base.py
+│   ├── factory.py
+│   └── pmc_source.py
+│
+├── docker-compose.yaml
+├── Dockerfile
+├── exports/
+│   ├── exports.csv
+│   └── exports.json
+│
+├── ids.txt
+├── json_exporter.py
+├── logger_config.py
+├── Makefile
+├── pmc_api_client.py
+├── pmc_parser.py
+├── requirements.txt
+├── run.py
+└── storage/
+    ├── __init__.py
+    ├── base.py
+    └── duckdb_backend.py
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
-### ✅ 1. Build Docker Image
+### 1. 🔧 Build Docker Image
 
 ```bash
 docker build -t pubmed-parser .
 ```
 
-### ▶️ 2. Run (Mount Current Directory)
+### 2. ▶️ Run the Container
+
+Mount current directory for access to local files:
 
 ```bash
 docker run --rm -v $(pwd):/app pubmed-parser
@@ -45,19 +67,19 @@ docker run --rm -v $(pwd):/app pubmed-parser
 
 ## 🐍 CLI Usage
 
-### 📄 Debug Mode (no file output)
+### Debug mode (no export, just logging)
 
 ```bash
 python run.py --ids ids.txt -d
 ```
 
-### 📤 Export as CSV
+### Export data to CSV
 
 ```bash
 python run.py --ids ids.txt --format csv --file output.csv
 ```
 
-### 📤 Export as JSON
+### Export data to JSON
 
 ```bash
 python run.py --ids ids.txt --format json --file output.json
@@ -65,25 +87,19 @@ python run.py --ids ids.txt --format json --file output.json
 
 ---
 
-## 🌐 FastAPI Usage
+## 🌐 API Usage
 
-### ⚙️ Start the API
+Make sure the API is running. You can start it using:
 
 ```bash
 uvicorn api.main:app --reload
 ```
 
----
-
-## 🔐 Authentication
-
-All API endpoints require an **API key** passed via the `Authorization` header.
-
-**Default key:** `aganitha123` (from `config.py`)
+> Default API Key: `aganitha123`
 
 ---
 
-### 📥 Upload PMCIDs for Processing
+### 🔼 Upload PMCIDs for Processing
 
 ```bash
 curl -X POST "http://localhost:8000/upload" \
@@ -92,21 +108,21 @@ curl -X POST "http://localhost:8000/upload" \
   -d "[\"PMC7074893\", \"PMC1234567\"]"
 ```
 
-### 📄 View All Parsed Results
+### 📥 Get All Parsed Results (JSON)
 
 ```bash
 curl -X GET "http://localhost:8000/results" \
   -H "Authorization: aganitha123"
 ```
 
-### 📥 Download CSV Export
+### 📄 Download as CSV
 
 ```bash
 curl -L -H "Authorization: aganitha123" \
   "http://localhost:8000/download.csv" -o export.csv
 ```
 
-### 📥 Download JSON Export
+### 📦 Download as JSON
 
 ```bash
 curl -L -H "Authorization: aganitha123" \
@@ -115,65 +131,33 @@ curl -L -H "Authorization: aganitha123" \
 
 ---
 
-## 🛢️ DuckDB Storage
-
-The parsed results are stored in:
-
-```bash
-data/articles.duckdb
-```
-
-To inspect:
+## 🛢️ Querying DuckDB Directly
 
 ```sql
--- Open in duckdb shell
-duckdb data/articles.duckdb
-
--- Then run
+-- Run this in DuckDB
+.open data/articles.duckdb
 SELECT * FROM articles;
 ```
 
 ---
 
-## 📎 Example Files
+## ✅ Features
 
-* `ids.txt`: List of PMCIDs
-* `output.csv`, `output.json`: CLI exports
-* `export.csv`, `export.json`: API exports
-
----
-
-## 🧪 Test Commands (Summary)
-
-```bash
-# CLI - Debug
-python run.py --ids ids.txt -d
-
-# CLI - CSV export
-python run.py --ids ids.txt --format csv --file output.csv
-
-# CLI - JSON export
-python run.py --ids ids.txt --format json --file output.json
-
-# API - Upload
-curl -X POST "http://localhost:8000/upload" \
-  -H "Authorization: aganitha123" \
-  -H "Content-Type: application/json" \
-  -d "[\"PMC7074893\", \"PMC1234567\"]"
-
-# API - View
-curl -X GET "http://localhost:8000/results" \
-  -H "Authorization: aganitha123"
-
-# API - CSV download
-curl -L -H "Authorization: aganitha123" \
-  "http://localhost:8000/download.csv" -o export.csv
-
-# API - JSON download
-curl -L -H "Authorization: aganitha123" \
-  "http://localhost:8000/download.json" -o export.json
-```
+* Fetch PMC XML articles
+* Extract captions, labels, and figure images
+* Entity extraction using BERN2 API
+* Export to CSV/JSON
+* Query results from DuckDB
+* FastAPI-based REST endpoints
+* Docker support
 
 ---
 
-Let me know if you want badges, example outputs, screenshots, or to convert this to Markdown or PDF.
+## 📝 Notes
+
+* Data is saved in `data/articles.duckdb`
+* Exports are saved in `exports/` folder
+* Make sure the `EXPORT_FOLDER` in `config.py` points to `exports/`
+
+
+
