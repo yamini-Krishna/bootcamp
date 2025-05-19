@@ -54,8 +54,13 @@ mkdocs build
 ```
 
 * This creates a `site/` folder containing all the HTML, CSS, and JavaScript files needed to serve your docs as a website.
+  
+---
 
+Notes
+Your Markdown docs are inside the docs/ folder.
 
+Configuration is controlled by mkdocs.yml.
 
 
 
