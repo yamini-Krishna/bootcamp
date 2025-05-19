@@ -121,7 +121,37 @@
 * Added schema migrations (e.g., `created_at`).
 * Implemented soft deletes, audit logging, rate limiting, and recovery.
 
+---
+# figure-captions-extraction
 
+### Figure Caption Extraction and Access System (using BERN2)
+
+#### **Day 1: Data Extraction & Setup**
+
+* Analyzed requirements and finalized tech stack: **FastAPI**, **DuckDB**, **BERN2**, **Docker**.
+* Used **PMC BioC API** to extract:
+
+  * Title
+  * Abstract
+  * Figure captions
+  * Figure URLs
+* Parsed and stored metadata structure locally.
+
+#### **Day 2: Entity Extraction & API/CLI Implementation**
+
+* Integrated **BERN2 API** for biomedical entity recognition in figure captions.
+* Linked extracted entities to corresponding figures.
+* Built ingestion pipeline and batch-capable **CLI tool**.
+* Developed secured **FastAPI** endpoints (query, upload, download as JSON/CSV).
+* Added config for logging, API key, and storage backend.
+
+#### **Day 3: Final Testing, Documentation, and Dockerization**
+
+* Wrote a **short README** with usage instructions and Docker commands.
+* Created example config files and usage samples.
+* Added detailed logging and success/failure exit statuses.
+* Finalized Dockerfile and **Makefile** for seamless deployment.
+* Validated system with real PMC IDs and ensured clean shutdown behavior.
 
 
 
