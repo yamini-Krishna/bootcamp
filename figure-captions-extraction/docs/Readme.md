@@ -1,61 +1,61 @@
-
-## 📘 Project Documentation with MkDocs
+Project Documentation Website
 
 ---
 
-### 🛠️ Prerequisites
+## Prerequisites
 
-Ensure you have **Python 3.7+** installed, then install MkDocs:
+- Install Python (version 3.7 or higher recommended)
+- Install MkDocs (a Python package)
+- Basic command line usage
+
+---
+
+## Step 1: Install MkDocs
+
+Open your terminal (Command Prompt, PowerShell, or shell) and run:
 
 ```bash
 pip install mkdocs
-```
+````
 
 ---
 
-### 🚀 Getting Started
+## Step 2: Prepare the Documentation Site
 
-#### 1. Initialize MkDocs in your project
+Your Markdown (`.md`) files like `implementation.md`, `operationalization.md`, etc. are located in the `docs/` folder.
 
-```bash
-mkdocs new .
-```
+MkDocs uses a configuration file `mkdocs.yml` in the project root (next to `docs/`) to build the site.
 
-> This creates a `mkdocs.yml` configuration file and a `docs/` folder.
+---
 
-#### 2. Move your existing `README.md` (or create a new one)
+## Step 3: Preview Locally
 
-Save your current `README.md` in the `docs/` folder or edit the default `index.md` file.
-
-Example:
-
-```bash
-mv README.md docs/index.md
-```
-
-#### 3. Serve the documentation locally
+To preview your documentation website locally, run:
 
 ```bash
 mkdocs serve
 ```
 
-📂 Open your browser and navigate to:
+* This command starts a local web server.
+* Open your web browser and go to [http://127.0.0.1:8000](http://127.0.0.1:8000)
+* You will see a live preview of your documentation.
+* Any changes you make to `.md` files will automatically refresh in the browser.
 
-```
-http://127.0.0.1:8000
-```
-
-You’ll see your documentation rendered live!
+Press `Ctrl+C` to stop the server.
 
 ---
 
-### 📦 Build Static Site
+## Step 4: Build the Static Website
 
-To generate the static HTML site:
+Once you are happy with the preview, build the static website files:
 
 ```bash
 mkdocs build
 ```
+
+* This creates a `site/` folder containing all the HTML, CSS, and JavaScript files needed to serve your docs as a website.
+
+
 
 
 
