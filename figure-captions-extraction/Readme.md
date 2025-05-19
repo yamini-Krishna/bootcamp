@@ -44,6 +44,30 @@ This tool fetches articles from PubMed Central (PMC) by PMCID, extracts figure c
     ├── base.py
     └── duckdb_backend.py
 ```
+---
+
+### 📦 Project File Overview
+
+| File/Folder           | Purpose                                                                   |
+| --------------------- | ------------------------------------------------------------------------- |
+| `api/`                | FastAPI backend containing routes (`main.py`) and auth logic (`auth.py`). |
+| `config.py`           | Global configuration settings (e.g. logging level, export folder).        |
+| `csv_exporter.py`     | Exports parsed results to CSV from CLI or API.                            |
+| `data/`               | Contains `articles.duckdb` storage with parsed article data.              |
+| `data_sources/`       | Abstract + PMC-specific data source logic for fetching article XML.       |
+| `docker-compose.yaml` | Defines container setup (optional use with Docker Compose).               |
+| `Dockerfile`          | Docker setup for building and running the project image.                  |
+| `exports/`            | Stores generated CSV and JSON export files.                               |
+| `ids.txt`             | Text file listing PMCIDs to be parsed.                                    |
+| `json_exporter.py`    | Exports parsed results to JSON from CLI.                                  |
+| `logger_config.py`    | Logging configuration utility.                                            |
+| `Makefile`            | Handy command shortcuts for build/run/test (optional).                    |
+| `pmc_api_client.py`   | Handles fetching articles from PMC API.                                   |
+| `pmc_parser.py`       | Parses XML to extract captions, figures, and metadata.                    |
+| `requirements.txt`    | Python dependencies for installing the project.                           |
+| `run.py`              | CLI entry point for fetching, parsing, and exporting.                     |
+| `storage/`            | Storage backends; currently uses DuckDB for article storage.              |
+
 
 ---
 
@@ -140,6 +164,9 @@ curl -L -H "Authorization: aganitha123" \
 .open data/articles.duckdb
 SELECT * FROM articles;
 ```
+
+---
+## ascinema links:
 
 ---
 
