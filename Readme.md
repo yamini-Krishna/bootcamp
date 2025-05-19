@@ -156,6 +156,35 @@ This project covers end-to-end persistence systems in Python – from files to d
 * Schema evolution, migrations
 * Handling deletes, archiving, auditing, rate limits, recovery
 
+---
 
+# figure-captions-extraction
+
+### 📄 Figure Caption Extraction and Access System
+
+A production-ready tool that extracts **figure captions**, **titles**, **abstracts**, **figure URLs**, and **key entities** (e.g., genes) from scientific papers on **PubMed Central (PMC)**.
+
+####  Features
+
+* Submit PMC/PMID IDs via **API** or **CLI**
+* Retrieve data in **JSON or CSV**
+* Extract key entities using **PubTator**
+* Configurable storage (default: **DuckDB**)
+* Secure API (key/password protected)
+* Dockerized and ready for deployment
+
+####  Usage
+
+```bash
+# Run Docker
+docker build -t fig-extractor .
+docker run -e API_KEY=yourkey -p 8000:8000 fig-extractor
+
+# CLI Ingestion
+python cli.py ingest --ids ids.txt
+
+# API Example
+curl -H "x-api-key: yourkey" http://localhost:8000/query?pmc_id=PMC123456
+```
 
 
