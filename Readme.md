@@ -101,7 +101,7 @@ This project explores the evolution of a simple line-processing script into a mo
 
 Each level increases in complexity, focusing on clean architecture, modularity, state handling, routing, and real-time observability.
 
-## 📁 Project Structure
+## Project Structure
 
 - `abstraction-level-0/`: Basic script, no abstraction.
 - `abstraction-level-1/`: CLI arguments and environment config.
@@ -112,7 +112,7 @@ Each level increases in complexity, focusing on clean architecture, modularity, 
 - `abstraction-level-7/`: Observability with metrics and a live dashboard.
 - `FINAL.md`: Final project wrap-up, system design notes, and reflection.
 
-## ✅ Goals
+## Goals
 
 - Learn clean abstraction and separation of concerns.
 - Build a flexible stream processing system.
@@ -125,7 +125,7 @@ Each level increases in complexity, focusing on clean architecture, modularity, 
 
 This project covers end-to-end persistence systems in Python – from files to databases and real-world system design.
 
-### 🗂️ Folders Overview
+### 🗂 Folders Overview
 
 **1. File & DB Persistence:**
 
