@@ -1,0 +1,14 @@
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    
+    depends_on:
+      - bern2
+
+  bern2:
+    image: dorajistyle/bern2
+    ports:
+      - "8888:8888"
