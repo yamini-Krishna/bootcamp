@@ -166,7 +166,19 @@ SELECT * FROM articles;
 ```
 
 ---
-## ascinema links:
+
+## 🎥 Asciinema Recordings
+
+Get a quick look at how to use the project via CLI and API:
+
+* ✅ **CLI Usage Demo**
+  [![asciicast](https://asciinema.org/a/Tmj6NyuuEqlQIC5DxFccUoKkx.svg)](https://asciinema.org/a/Tmj6NyuuEqlQIC5DxFccUoKkx)
+
+* ✅ **API Server Running**
+  [![asciicast](https://asciinema.org/a/yGzIpSMdpRZvirzcnoZGJax7T.svg)](https://asciinema.org/a/yGzIpSMdpRZvirzcnoZGJax7T)
+
+* ✅ **API Usage (Upload + Download)**
+  [![asciicast](https://asciinema.org/a/76be0e12-a0fe-4161-896f-43c2a391171e.svg)](https://asciinema.org/a/76be0e12-a0fe-4161-896f-43c2a391171e)
 
 ---
 
