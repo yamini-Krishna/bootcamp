@@ -76,14 +76,16 @@ python run.py --ids ids.txt -d
 ### Export data to CSV
 
 ```bash
-python run.py --ids ids.txt --format csv --file output.csv
+python run.py --ids ids.txt --format csv --file outputfce.csv
 ```
+-outputfce.csv is present in the directory
 
 ### Export data to JSON
 
 ```bash
-python run.py --ids ids.txt --format json --file output.json
+python run.py --ids ids.txt --format json --file outputfce.json
 ```
+-outputfce.json is present in the directory
 
 ---
 
