@@ -169,16 +169,19 @@ SELECT * FROM articles;
 
 ## 🎥 Asciinema Recordings
 
-Get a quick look at how to use the project via CLI and API:
+Watch demos to understand how to use the project via CLI and API:
 
-* ✅ **CLI Usage Demo**
-  [![asciicast](https://asciinema.org/a/Tmj6NyuuEqlQIC5DxFccUoKkx.svg)](https://asciinema.org/a/Tmj6NyuuEqlQIC5DxFccUoKkx)
+### ✅ CLI Usage Demo
 
-* ✅ **API Server Running**
-  [![asciicast](https://asciinema.org/a/yGzIpSMdpRZvirzcnoZGJax7T.svg)](https://asciinema.org/a/yGzIpSMdpRZvirzcnoZGJax7T)
+[![asciicast](https://asciinema.org/a/Tmj6NyuuEqlQIC5DxFccUoKkx.svg)](https://asciinema.org/a/Tmj6NyuuEqlQIC5DxFccUoKkx)
 
-* ✅ **API Usage (Upload + Download)**
-  [![asciicast](https://asciinema.org/a/76be0e12-a0fe-4161-896f-43c2a391171e.svg)](https://asciinema.org/a/76be0e12-a0fe-4161-896f-43c2a391171e)
+### ✅ API Server Running
+
+[![asciicast](https://asciinema.org/a/yGzIpSMdpRZvirzcnoZGJax7T.svg)](https://asciinema.org/a/yGzIpSMdpRZvirzcnoZGJax7T)
+
+### ✅ API Usage (Upload + Download)
+
+[![asciicast](https://asciinema.org/a/Uszpa0X1C54yzkz7muajj1kKU.svg)](https://asciinema.org/a/Uszpa0X1C54yzkz7muajj1kKU)
 
 ---
 
