@@ -203,5 +203,38 @@ Watch demos to understand how to use the project via CLI and API:
 * Exports are saved in `exports/` folder
 * Make sure the `EXPORT_FOLDER` in `config.py` points to `exports/`
 
+---
+
+# Documentation Overview [docs folder]
+
+This folder contains key Markdown files that together document the entire project. Using [MkDocs](https://www.mkdocs.org/), you can easily build a professional documentation website from these files.
+
+---
+
+## Files and Contents 
+
+- **README.md** — This guide explaining how to generate and view the website from these docs.
+- **api.md** — Details the API endpoints, usage examples, and authentication.
+- **cli.md** — Describes the command-line interface tools and their options.
+- **design-document.md** — Covers the system architecture, design choices, and high-level overview.
+- **index.md** — The project introduction and overview to orient new readers.
+- **operationalization.md** — Instructions on deployment, configuration, and running the system.
+- **testing.md** — Describes the testing strategy, including functional, security, and performance tests.
+
+---
+
+## How to Use
+
+To convert these Markdown files into a browsable website, run:
+
+```bash
+mkdocs serve
+````
+
+Then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser for a live preview.
+
+For more information, see the README.md file present in docs folder
+
+
 
 
